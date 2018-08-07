@@ -1,8 +1,9 @@
 # Site settings
 title: Mikael Torfason
 email: mikaeltorfason@gmail.com
-url: "localhost:4000"
-_url: https://mikaeltorfason.com
+url: https://gabrielmikaels.com/mikaeltorfason.com
+_url: "localhost:4000"
+__url: https://mikaeltorfason.com
 description: "Mikael Torfason - Playwright"
 
 # Color settings (hex-codes without the leading hash-tag)
