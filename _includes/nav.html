@@ -8,18 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item {% if page.category == "home" %} active {% endif %}">
-                <a class="nav-link" href="/">Home
+                <a class="nav-link" href="{{ site.url }}/">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item {% if page.category == "novels" %} active {% endif %}">
-                <a class="nav-link" href="/novels">Novels</a>
+                <a class="nav-link" href="{{ site.url }}/novels">Novels</a>
             </li>
             <li class="nav-item {% if page.category == "film" %} active {% endif %}">
-                <a class="nav-link" href="/film">Film</a>
+                <a class="nav-link" href="{{ site.url }}/film">Film</a>
             </li>
             <li class="nav-item {% if page.category == "theater" %} active {% endif %}">
-                <a class="nav-link" href="/theater">Theater</a>
+                <a class="nav-link" href="{{ site.url }}/theater">Theater</a>
             </li>
         </ul>
         </div>
