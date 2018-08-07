@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!-- Page Content -->
+<div class="container">
+
+    {% assign data = site.data[page.category] %}
+
+    <!-- Page Heading -->
+    <h1 class="my-4">{{ data.title }}
+        <small></small>
+    </h1>
+
+    {% for item in data.items %}
+
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ site.url }}/img/{{ page.category }}/{{ item.image }}" alt="">
+        </div>
+        <div class="col-md-6">
+            <h3>{{ item.name }} ({{ item.year }})</h3>
+            <p>{{ item.description | newline_to_br }}</p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+    {% endfor %}
+
+</div>
+<!-- /.container -->
